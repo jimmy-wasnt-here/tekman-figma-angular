@@ -1,0 +1,37 @@
+.header {
+    background-color: #00AEA4;
+    padding-bottom: 30px;
+}
+
+.header-title {
+    font-family: 'verdana';
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: -0.09565217047929764px;
+    text-align: left center;
+    color: #FFFF;
+    margin-left: 60px;
+
+}
+
+.menu-icon {
+    width: "20px" ;
+    height: "30px";
+    margin-right: 25px;
+}
+
+.button-group {
+    float: right;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 25px;
+}
+
+fa-icon {
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    margin-right: 15px;
+}

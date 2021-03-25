@@ -1,0 +1,32 @@
+{
+	"courses": [{
+		"id": "0001",
+		"name": "1º Trimestre",
+		"totalSessions": 50,
+		"completedSessions": 50,
+		"sessions": []
+	}, {
+		"id": "0002",
+		"name": "2º Trimestre",
+		"totalSessions": 50,
+		"completedSessions": 30,
+		"sessions": [{
+			"name": "Fracciones y decimales",
+			"id": "24"
+		}, {
+			"name": "Ordinales,Fracciones y Decimales",
+			"id": "25"
+		}, {
+			"name": "Ordinales, Fracciones, Decimales y Geometría",
+			"id": "26"
+		}]
+	}, {
+		"id": "0003",
+		"name": "3º Trimestre",
+		"totalSessions": 50,
+		"completedSessions": 0,
+		"sessions": []
+	}],
+	"activeCourseId": "002",
+	"activeSessionId": "25"
+}
