@@ -18,19 +18,16 @@ mat-card-subtitle {
 }
 
 .btn {
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 20px;
-    padding-right: 26px;
     color: white;
     background-color: #F26C48;
-    border-radius: 5px;
+    border-color: #F26C48;
 
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
     font-size: 20px;
     
+    margin-right: 15px;
 }
 
 .btn:hover{
