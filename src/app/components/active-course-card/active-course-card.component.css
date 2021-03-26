@@ -18,8 +18,8 @@ mat-card-subtitle {
 }
 
 .btn {
-    color: white;
-    background-color: #F26C48;
+    color: #F26C48;
+    background-color: white;
     border-color: #F26C48;
 
     font-family: Roboto;
@@ -31,6 +31,7 @@ mat-card-subtitle {
 }
 
 .btn:hover{
-    color: #F26C48;
-    background-color: white;
+    color: white;
+    background-color: #F26C48;
+    border-color: white;
 }
