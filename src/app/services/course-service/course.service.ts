@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
 import { Course } from 'src/app/model/course.model';
 import Courses from '../../../assets/json/courses.json';
 
@@ -14,6 +15,11 @@ export class CourseService {
     return Courses.courses;
   }
 
+  public findById(id: string): Observable<Course>{
+    const course = Courses.courses.find(c => c.id === id) as Course;
+    return of(course);
+  }
+  
   public hasActiveCourse() : Boolean{
     return Courses.activeCourseId? true : false;
   }

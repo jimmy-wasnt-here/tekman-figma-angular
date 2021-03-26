@@ -1,0 +1,16 @@
+<mat-card>
+    <div class="row">
+        <mat-card-title>Sesiones del {{course.name}}</mat-card-title>
+        <div class="sessionsMarker">{{course.completedSessions}}/{{course.totalSessions}}</div>
+    </div>
+    <div>spacer</div>
+    <div class="container">
+        <ul>
+            <li *ngFor="let session of course.sessions" class="row">
+                <span class="sessionNumber col-lg-1">{{session.id}}</span>
+                <span class="sessionName col-md-6">{{session.name}}</span>
+                <span class="sessionWatchedIcon col-md-3"><fa-icon [icon]="faEye"></fa-icon></span>
+            </li>
+        </ul>
+    </div>
+</mat-card>

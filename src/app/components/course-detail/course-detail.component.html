@@ -1,1 +1,8 @@
-<p>course-detail works!</p>
+<div class="container-fluid">
+    <div class="backButton"><label class="" (click)="goBack()"><fa-icon [icon]="faArrowLeft"></fa-icon>Atrás</label></div>
+    <div class="cardsSection">
+        <app-course-card [course]="course"></app-course-card>
+        <app-list-sessions [course]="course"></app-list-sessions>
+    </div>
+
+</div>

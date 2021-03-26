@@ -12,6 +12,7 @@ import { ActiveCourseCardComponent } from './components/active-course-card/activ
 import { CourseDetailComponent } from './components/course-detail/course-detail.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AppRoutingModule } from './routers/app-routing.module';
+import { ListSessionsComponent } from './components/list-sessions/list-sessions.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { AppRoutingModule } from './routers/app-routing.module';
     CourseCardComponent,
     ActiveCourseCardComponent,
     DashboardComponent,
-    CourseDetailComponent
+    CourseDetailComponent,
+    ListSessionsComponent
   ],
   imports: [
     BrowserModule,

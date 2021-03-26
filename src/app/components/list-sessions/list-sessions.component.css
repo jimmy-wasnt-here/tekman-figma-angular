@@ -1,0 +1,35 @@
+.sessionsMarker{
+    float: right;
+    display: inline;
+    background-color: #ED993F;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+mat-card {
+    float: right;
+}
+li {
+    list-style-type: none;
+}
+
+.sessionNumber {
+    font-weight: bold;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+
+
+    float: left;
+}
+
+.sessionName {
+    font-weight: normal;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+}
+.sessionWatchedIcon {
+    
+}

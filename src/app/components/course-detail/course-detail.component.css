@@ -1,0 +1,11 @@
+.backButton{
+    font-family: Roboto, sans-serif;
+    padding: 5px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-left: 30px;
+}
+
+.cardsSection {
+    display: inline-block;
+}
