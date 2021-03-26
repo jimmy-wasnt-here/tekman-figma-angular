@@ -9,6 +9,7 @@ import { CourseCardComponent } from './components/course-card/course-card.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { ActiveCourseCardComponent } from './components/active-course-card/active-course-card.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ActiveCourseCardComponent } from './components/active-course-card/activ
     ToolbarMenuComponent,
     MainContentComponent,
     CourseCardComponent,
-    ActiveCourseCardComponent
+    ActiveCourseCardComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
