@@ -9,7 +9,9 @@ import { CourseCardComponent } from './components/course-card/course-card.compon
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { ActiveCourseCardComponent } from './components/active-course-card/active-course-card.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { CourseDetailComponent } from './components/course-detail/course-detail.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AppRoutingModule } from './routers/app-routing.module';
 
 
 @NgModule({
@@ -19,13 +21,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MainContentComponent,
     CourseCardComponent,
     ActiveCourseCardComponent,
-    DashboardComponent
+    DashboardComponent,
+    CourseDetailComponent
   ],
   imports: [
     BrowserModule,
     FontAwesomeModule,
     BrowserAnimationsModule,
-    MatCardModule
+    MatCardModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
