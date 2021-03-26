@@ -1,6 +1,18 @@
-.sessionsMarker{
-    float: right;
-    display: inline;
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.card-header{
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.container {
+    padding-top: 5px;
+}
+.sessionsMarker {
+    text-align: center;
     background-color: #ED993F;
     color: white;
     border-radius: 10px;
@@ -9,27 +21,88 @@
 
 mat-card {
     float: right;
+    border-radius: 10px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
+
 li {
     list-style-type: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+li:hover{
+    background-color: #F26C48;
+    color: white;
+}
+
+.playButtons {
+    display: none;
+}
+
+.btn{
+    padding: 10px;
+    padding-top: 11px;
+    padding-left: 13px;
+    border-color: #F26C48;
+    margin-left: 5px;
+    color: white;
+    background-color: #F26C48;
+}
+
+.btn:hover{
+
+    color: #ED993F;
+    background-color: white;
+}
+  
+li:hover > .playButtons {
+      display: block;
+  }
+
+.statusIcon{
+    display: block;
+    text-align: right;
+}
+
+li:hover > .statusIcon{
+    display: none;
 }
 
 .sessionNumber {
+    
     font-weight: bold;
     font-family: Roboto;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
 
+    padding-left: 30px;
+}
 
-    float: left;
+mat-card-title{
+    
+    padding-left: 30px;
 }
 
 .sessionName {
     font-weight: normal;
     font-family: Roboto;
     font-style: normal;
-    font-size: 20px;
+    font-size: 15px;
+    text-align: left;
+}
+.sessionUnwatchedIcon {
+    color: black;
 }
 .sessionWatchedIcon {
-    
+    color: gray;
 }
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  

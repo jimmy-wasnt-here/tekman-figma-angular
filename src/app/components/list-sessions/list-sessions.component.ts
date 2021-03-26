@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { faEye } from '@fortawesome/free-solid-svg-icons';
+import { faEye, faEyeSlash, faPlay, faRandom } from '@fortawesome/free-solid-svg-icons';
 import { Course } from 'src/app/model/course.model';
 import { Session } from 'src/app/model/session.model';
 
@@ -12,6 +12,9 @@ import { Session } from 'src/app/model/session.model';
 export class ListSessionsComponent implements OnInit {
 
   faEye = faEye;
+  faEyeSlash = faEyeSlash;
+  faPlay = faPlay;
+  faRandom = faRandom;
   @Input() course: Course;
 
   constructor() { }

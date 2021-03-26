@@ -12,13 +12,16 @@
 		"completedSessions": 30,
 		"sessions": [{
 			"name": "Fracciones y decimales",
-			"id": "24"
+			"id": "24",
+			"watched": true
 		}, {
 			"name": "Ordinales,Fracciones y Decimales",
-			"id": "25"
+			"id": "25",
+			"watched": false
 		}, {
 			"name": "Ordinales, Fracciones, Decimales y Geometría",
-			"id": "26"
+			"id": "26",
+			"watched": false
 		}]
 	}, {
 		"id": "0003",

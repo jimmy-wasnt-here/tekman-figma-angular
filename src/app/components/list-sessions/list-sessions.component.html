@@ -1,15 +1,24 @@
-<mat-card>
-    <div class="row">
-        <mat-card-title>Sesiones del {{course.name}}</mat-card-title>
-        <div class="sessionsMarker">{{course.completedSessions}}/{{course.totalSessions}}</div>
+<mat-card class="col-md-12">
+    <div class="row card-header">
+        <mat-card-title class="col-md-11">Sesiones del {{course.name}}</mat-card-title>
+        <div class="sessionsMarker col-md-1">{{course.completedSessions}}/{{course.totalSessions}}</div>
     </div>
-    <div>spacer</div>
+
     <div class="container">
         <ul>
             <li *ngFor="let session of course.sessions" class="row">
-                <span class="sessionNumber col-lg-1">{{session.id}}</span>
-                <span class="sessionName col-md-6">{{session.name}}</span>
-                <span class="sessionWatchedIcon col-md-3"><fa-icon [icon]="faEye"></fa-icon></span>
+                <span class="sessionNumber col-md-1">{{session.id}}</span>
+                <span class="sessionName col-md-9">{{session.name}}</span>
+            
+                <span class="col-md-2 playButtons">
+                    <button class="btn btn-primary"><fa-icon [icon]="faRandom"></fa-icon></button>
+                    <button class="btn btn-primary"><fa-icon [icon]="faPlay"></fa-icon></button>
+                </span>
+                <span class="col-md-1 statusIcon">
+                    <fa-icon *ngIf="!session.watched; else elseBlock" class="sessionWatchedIcon" [icon]="faEyeSlash"></fa-icon>
+                    <ng-template #elseBlock><fa-icon class="sessionUnwatchedIcon" [icon]="faEye"></fa-icon></ng-template>
+                </span>
+                
             </li>
         </ul>
     </div>

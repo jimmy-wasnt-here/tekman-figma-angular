@@ -1,8 +1,9 @@
 <div class="container-fluid">
     <div class="backButton"><label class="" (click)="goBack()"><fa-icon [icon]="faArrowLeft"></fa-icon>Atrás</label></div>
-    <div class="cardsSection">
-        <app-course-card [course]="course"></app-course-card>
-        <app-list-sessions [course]="course"></app-list-sessions>
+    <div class="cardsSection row">
+        <app-course-card class="col-md-3" [course]="course"></app-course-card>
+        <app-list-sessions class="col-md-7" [course]="course"></app-list-sessions>
+        <div class="col-offset-2"></div>
     </div>
 
 </div>
