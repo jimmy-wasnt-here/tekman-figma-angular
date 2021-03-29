@@ -9,7 +9,10 @@ import { SidebarService } from './services/sidebar-service/sidebar.service';
 })
 export class AppComponent {
   title = 'tekman-figma-angular';
+
   public sideBarOpened: boolean;
+  public languages = ["español", "inglés", "francés"];
+  public courses = ["3º Infantil", "4º Infantil", "5º Infantil"];
   public faArrowLeft = faArrowLeft;
 
   constructor(private sidebarService: SidebarService){}
