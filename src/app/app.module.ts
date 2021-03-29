@@ -14,6 +14,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AppRoutingModule } from './routers/app-routing.module';
 import { ListSessionsComponent } from './components/list-sessions/list-sessions.component';
 import { SidebarModule } from 'ng-sidebar';
+import { PreplayScreenComponent } from './components/preplay-screen/preplay-screen.component';
 
 
 @NgModule({
@@ -25,7 +26,8 @@ import { SidebarModule } from 'ng-sidebar';
     ActiveCourseCardComponent,
     DashboardComponent,
     CourseDetailComponent,
-    ListSessionsComponent
+    ListSessionsComponent,
+    PreplayScreenComponent
   ],
   imports: [
     BrowserModule,
