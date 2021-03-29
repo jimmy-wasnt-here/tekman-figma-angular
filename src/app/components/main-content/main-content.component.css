@@ -8,3 +8,49 @@ h3 {
     margin-left: 30px;
     padding-top: 10px;
 }
+
+.sidebarTitle{
+    font-weight: bold;
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
+
+.container{
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 30px;
+    background-color: white;
+
+}
+
+legend {
+    background-color: #E5E5E5;
+    font-size: medium;
+    padding-right: 5px;
+    word-wrap: normal;
+    color: grey;
+}
+
+fieldset {
+    border: 0.5px; 
+    border-style: solid; 
+    margin-top: 20px;
+    padding: 20px;
+    border-color: grey;
+}
+
+.btn{
+    background-color: coral;
+    border-color: coral;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.closingLabel {
+    text-align: center;
+}
+
+row{
+    align-content: center;
+}

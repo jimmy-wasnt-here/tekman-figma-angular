@@ -13,6 +13,7 @@ import { CourseDetailComponent } from './components/course-detail/course-detail.
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AppRoutingModule } from './routers/app-routing.module';
 import { ListSessionsComponent } from './components/list-sessions/list-sessions.component';
+import { SidebarModule } from 'ng-sidebar';
 
 
 @NgModule({
@@ -31,7 +32,7 @@ import { ListSessionsComponent } from './components/list-sessions/list-sessions.
     FontAwesomeModule,
     BrowserAnimationsModule,
     MatCardModule,
-    AppRoutingModule
+    AppRoutingModule,SidebarModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
