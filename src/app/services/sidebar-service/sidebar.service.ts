@@ -4,7 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class SidebarServiceService {
+export class SidebarService {
 
   sidebarStatus = false;
   observableStatus: BehaviorSubject<boolean>;

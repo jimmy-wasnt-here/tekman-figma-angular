@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { faBars,faCog, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
-import { SidebarServiceService } from 'src/app/services/sidebar-service.service';
+import { SidebarService } from 'src/app/services/sidebar-service/sidebar.service';
 
 @Component({
   selector: 'app-toolbar-menu',
@@ -12,7 +12,7 @@ export class ToolbarMenuComponent implements OnInit {
   faCog = faCog;
   faSignOutAlt = faSignOutAlt;
   faBars = faBars;
-  constructor(public sidebarService: SidebarServiceService) { }
+  constructor(public sidebarService: SidebarService) { }
 
   ngOnInit(): void {
   }

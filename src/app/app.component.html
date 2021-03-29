@@ -1,3 +1,47 @@
-<app-toolbar-menu></app-toolbar-menu>
-<router-outlet></router-outlet>
-<!-- <app-main-content></app-main-content> -->
+
+<ng-sidebar-container>
+    <!-- A sidebar -->
+    <ng-sidebar [(opened)]="sideBarOpened" position="right">
+        <div class="container">
+           
+            <div class="row">
+                <span class="col-xs-2">
+                    <fa-icon [icon]="faArrowLeft" (click)="closeSidebar()"></fa-icon>
+                </span>
+                <span class="sidebarTitle col-xs-10">Configuración</span>
+            </div>
+   
+            <fieldset>
+                <legend>Idioma</legend>
+                <select name="language" id="language">
+                    <option value="spanish">Español</option>
+                    <option value="english">Inglés</option>
+                    <option value="french">Francés</option>
+                </select>
+            </fieldset>
+             
+            <fieldset>
+                <legend>Curso</legend>
+                <select name="course" id="course">
+                    <option value="third">3º Infantil</option>
+                    <option value="fourth">4º Infantil</option>
+                    <option value="fifth">5º Infantil</option>
+                </select>
+            </fieldset>
+
+            <div class="col-xs-12 closingLabel">
+                <button class="btn btn-primary col-xs-12">Guardar cambios</button>
+            </div>        
+            <div class="col-xs-12 closingLabel">
+                <label class=" "><u>Cerrar sin guardar</u></label>
+            </div>
+        </div>
+    </ng-sidebar>
+
+    <!--real content-->
+    <div ng-sidebar-content id="sidebarContent">
+        <app-toolbar-menu></app-toolbar-menu>
+        <router-outlet></router-outlet>
+        <!-- <app-main-content></app-main-content> -->
+    </div>
+</ng-sidebar-container>
