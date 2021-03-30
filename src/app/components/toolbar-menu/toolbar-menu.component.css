@@ -1,5 +1,8 @@
-.header {
+* {
     background-color: #00AEA4;
+}
+
+.header {
     padding-bottom: 30px;
 }
 
@@ -13,13 +16,13 @@
     text-align: left center;
     color: #FFFF;
     margin-left: 60px;
-
 }
 
 .menu-icon {
     width: "20px" ;
     height: "30px";
     margin-right: 25px;
+    background-color: white;
 }
 
 .button-group {
@@ -27,6 +30,7 @@
     padding-top: 30px;
     margin-bottom: 30px;
     margin-right: 25px;
+    
 }
 
 fa-icon {

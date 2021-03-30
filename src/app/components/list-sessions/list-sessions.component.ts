@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { faEye, faEyeSlash, faPlay, faRandom } from '@fortawesome/free-solid-svg-icons';
 import { Course } from 'src/app/model/course.model';
-import { Session } from 'src/app/model/session.model';
 
 
 @Component({
@@ -17,9 +17,12 @@ export class ListSessionsComponent implements OnInit {
   faRandom = faRandom;
   @Input() course: Course;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  reproduceSession(id: string){
+    this.router.navigate(["/play/"+id], { queryParams: { hasFullView: true }});
+  }
 }

@@ -1,8 +1,20 @@
+.container {
+    background-color: white;
+}
+
+span {
+    background-color: white;
+}
+
+fa-icon {
+    background-color: white;
+}
+
 .sidebarTitle{
     font-weight: bold;
     padding-left: 30px;
     padding-right: 30px;
-
+    background-color: white;
 }
 
 .container{
@@ -27,6 +39,7 @@ fieldset {
     margin-top: 20px;
     padding: 20px;
     border-color: grey;
+    background-color: inherit;
 }
 
 .btn{
@@ -38,8 +51,9 @@ fieldset {
 
 .closingLabel {
     text-align: center;
+    background-color: white;
 }
 
-row{
-    align-content: center;
+.closingLabel>u {
+    background-color: white;
 }

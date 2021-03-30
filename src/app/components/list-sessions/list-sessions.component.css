@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    background-color: white;
 }
 
 .card-header{
@@ -45,18 +46,26 @@ li:hover{
     padding: 10px;
     padding-top: 11px;
     padding-left: 13px;
-    border-color: #F26C48;
     margin-left: 5px;
+    
+    border-color: #F26C48;
     color: white;
     background-color: #F26C48;
 }
-
+li:hover>span>button > fa-icon{
+    color: white;
+    background-color: #F26C48;
+}
 .btn:hover{
-
     color: #ED993F;
     background-color: white;
 }
-  
+
+.btn:hover > fa-icon>svg{
+    color: red;
+    background-color: black;
+}
+
 li:hover > .playButtons {
       display: block;
   }
@@ -81,7 +90,6 @@ li:hover > .statusIcon{
 }
 
 mat-card-title{
-    
     padding-left: 30px;
 }
 
@@ -105,4 +113,6 @@ hr {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
-  
+li:hover > span {
+    background-color: #F26C48;
+}
