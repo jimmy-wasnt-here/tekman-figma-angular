@@ -2,7 +2,6 @@
     <!-- A sidebar -->
     <ng-sidebar [(opened)]="sideBarOpened" position="right">
         <div class="container">
-           
             <div class="row">
                 <span class="col-xs-2">
                     <fa-icon [icon]="faArrowLeft" (click)="closeSidebar()"></fa-icon>
@@ -29,7 +28,7 @@
                 <button class="btn btn-primary col-xs-12">Guardar cambios</button>
             </div>        
             <div class="col-xs-12 closingLabel">
-                <label class=" "(click)="closeSidebar()"><u>Cerrar sin guardar</u></label>
+                <label class="closingLabel"(click)="closeSidebar()"><u>Cerrar sin guardar</u></label>
             </div>
         </div>
     </ng-sidebar>
@@ -38,6 +37,5 @@
     <div ng-sidebar-content id="sidebarContent">
         <app-toolbar-menu></app-toolbar-menu>
         <router-outlet></router-outlet>
-        <!-- <app-main-content></app-main-content> -->
     </div>
 </ng-sidebar-container>
