@@ -13,7 +13,7 @@
                 <span class="col-md-2 playButtons">
                     <button class="btn btn-primary"><fa-icon [icon]="faRandom"></fa-icon></button>
                     <!--TODO set play feature on click -->
-                    <button class="btn btn-primary"><fa-icon [icon]="faPlay"></fa-icon></button>
+                    <button class="btn btn-primary"><fa-icon [icon]="faPlay" (click)="reproduceSession(session.id)"></fa-icon></button>
                 </span>
                 <span class="col-md-1 statusIcon">
                     <fa-icon *ngIf="!session.watched; else elseBlock" class="sessionWatchedIcon" [icon]="faEyeSlash"></fa-icon>
