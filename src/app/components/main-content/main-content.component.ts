@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/app/model/course.model';
+import { Session } from 'src/app/model/session.model';
 import { CourseService } from 'src/app/services/course-service/course.service';
 
 @Component({
@@ -11,13 +12,21 @@ export class MainContentComponent implements OnInit {
 
   public courses: Course[];
   public hasActiveCourse: Boolean;
+  public activeCourse: Course;
+  public activeSession: Session;
 
   constructor(private courseService: CourseService) { }
 
   ngOnInit(): void {
     this.courses = this.getCourses();
     this.hasActiveCourse = this.courseService.hasActiveCourse();
-    
+    if(this.hasActiveCourse){
+      this.activeCourse = this.courseService.getActiveCourse();
+      this.activeSession = this.courseService.getActiveSession();
+    } else {
+      this.activeCourse = null;
+      this.activeSession = null;
+    }
   }
 
   getCourses(): Course[]{

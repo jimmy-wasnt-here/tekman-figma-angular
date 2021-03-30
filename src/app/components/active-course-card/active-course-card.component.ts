@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Course } from 'src/app/model/course.model';
 import { faPlay, faRandom, faShare } from '@fortawesome/free-solid-svg-icons'
+import { Session } from 'src/app/model/session.model';
 
 @Component({
   selector: 'app-active-course-card',
@@ -12,7 +13,8 @@ export class ActiveCourseCardComponent implements OnInit {
   faPlay = faPlay;
   faRandom = faRandom;
   faShare = faShare;
-  @Input() course: Course;
+  @Input() activeCourse: Course;
+  @Input() activeSession: Session;
 
   constructor() { }
 

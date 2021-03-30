@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { Course } from 'src/app/model/course.model';
+import { Session } from 'src/app/model/session.model';
 import Courses from '../../../assets/json/courses.json';
 
 
@@ -24,16 +25,22 @@ export class CourseService {
     return Courses.activeCourseId? true : false;
   }
 
-  public getActiveCourse() : String{
-    return Courses.activeCourseId;
+  public getActiveCourse() : Course{
+    let item = Courses.courses.find(course => course.id == Courses.activeCourseId)
+    console.log(item);
+    return item;
   }
 
   public hasActiveSession() : Boolean{
     return Courses.activeCourseId? true : false;
   }
 
-  public getActiveSession() : String{
-    return Courses.activeSessionId;
+  public getActiveSession() : Session{
+    let activeCourse = Courses.courses.find(course => course.id == Courses.activeCourseId);
+    console.log(activeCourse);
+    let activeSession = activeCourse.sessions.find(session => session.id == Courses.activeSessionId);
+    console.log(activeSession);
+    return activeSession;
   }
 
 }

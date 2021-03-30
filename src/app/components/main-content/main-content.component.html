@@ -1,5 +1,5 @@
 <div class="container-fluid" *ngIf="hasActiveCourse">
-    <app-active-course-card></app-active-course-card>
+    <app-active-course-card [activeCourse]="activeCourse" [activeSession]="activeSession"></app-active-course-card>
 </div>
 <div class="container-fluid">
     <h3>Temario</h3>
