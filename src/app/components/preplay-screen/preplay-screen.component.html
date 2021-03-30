@@ -1,1 +1,30 @@
-<p>preplay-screen works!</p>
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <h2 class="title">Antes de empezar...</h2>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="row justify-content-center">
+                <fa-icon [icon]="faVolumeUp" class="instructionIcon row justify-content-center"></fa-icon>
+            </div>
+            <div class="instructionText">Asegurate de tener el <b>volumen activado</b></div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <fa-icon [icon]="faStopWatch" class="instructionIcon row justify-content-center"></fa-icon>
+            </div>            
+            <div class="instructionText">Los bit pasan automaticamente <b>cada 2 segundos</b>.</div>
+        </div>
+        <div class="col">
+            <div class="row justify-content-center">
+                <fa-icon [icon]="faPause" class="instructionIcon row justify-content-center"></fa-icon>
+            </div>
+            <div class="instructionText">Puedes detener el pase con la <b>barra espaciadora</b> o haciendo <b>clic en la pantalla</b>.</div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <button class="btn btn-danger">
+            <fa-icon class="" [icon]="faPlay"></fa-icon> Empezar pase
+        </button>
+    </div>
+</div>
