@@ -31,4 +31,8 @@ export class AppComponent {
   closeSidebar(): void{
     this.sidebarService.setSidebarStatus();
   }
+
+  savePreferences(){
+    this.sidebarService.setSidebarStatus();
+  }
 }
