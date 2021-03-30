@@ -1,12 +1,12 @@
 <ng-sidebar-container>
     <!-- A sidebar -->
     <ng-sidebar [(opened)]="sideBarOpened" position="right">
-        <div class="container">
-            <div class="row">
-                <span class="col-xs-2">
+        <div class="container sidebarContainer">
+            <div class="row sidebarElement">
+                <span class="col-md-1">
                     <fa-icon [icon]="faArrowLeft" (click)="closeSidebar()"></fa-icon>
                 </span>
-                <span class="sidebarTitle col-xs-10">Configuración</span>
+                <span class="sidebarTitle col-md-11">Configuración</span>
             </div>
    
             <fieldset>
@@ -23,11 +23,11 @@
                 </select>
             </fieldset>
 
-            <div class="col-xs-12 closingLabel">
+            <div class="row justify-content-center sidebarElement">
                 <!--TODO set saving feature-->
-                <button class="btn btn-primary col-xs-12">Guardar cambios</button>
+                <button class="btn btn-primary col-8" (click)="savePreferences()">Guardar cambios</button>
             </div>        
-            <div class="col-xs-12 closingLabel">
+            <div class="col-xs-12 closingLabel sidebarElement">
                 <label class="closingLabel"(click)="closeSidebar()"><u>Cerrar sin guardar</u></label>
             </div>
         </div>
